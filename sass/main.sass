@@ -1,0 +1,256 @@
+$primary-color: rgb(245, 193, 22)
+.overlay
+    background: url('../assets/IMG_0378-min.JPG') no-repeat bottom center fixed
+    -webkit-filter: grayscale(100%)
+    z-index: -1
+    opacity: 1
+    position: fixed
+    top: 0
+    bottom: 0
+    right: 0
+    left: 0
+
+.main-content
+    box-shadow: 0px 0 2px 0px black
+    background-color: white
+
+.header__link
+    text-decoration: none
+    font-size: 16px
+
+.slide
+    margin-left: -12px
+    margin-right: -12px
+
+.slider-background
+    background-color: $primary-color
+    width: 100%
+    height: 400px
+
+.hero
+    position: relative
+    top: 50%
+    transform: translateY(-50%)
+    padding: 0 25px 0 25px
+    &__title
+        font-size: 36px
+        font-weight: 700
+        line-height: 36px
+    &__text
+        color: white
+        line-height: 20px
+    &__btn
+        background-color: white
+        color: black
+        border: none
+        border-radius: 2px
+        font-weight: 700
+        padding: 4px 24px 4px 24px
+
+.feature
+    &__text
+        font-size: 14px
+        color: rgb(180, 179, 179)
+        padding-top: 10px
+
+.gallery
+    &__item
+        border-bottom: 4px solid $primary-color
+        margin-top: 18px
+        height: 296px
+
+    &__image
+        width: 100%
+        height: 292px
+        object-fit: cover
+        filter: grayscale(100%)
+
+.partners__item
+    border: 2px solid rgba(197, 196, 196, 0.432)
+    border-radius: 4px
+    text-align: center
+    height: 100%
+    padding: 0 10px 0 10px
+
+.partners__logo
+    width: 100%
+    padding: 0px
+    filter: grayscale(100%)
+    position: relative
+    top: 50%
+    transform: translateY(-50%)
+
+.footer
+    background-color: rgb(39, 40, 49)
+    color: rgba(255, 255, 255, 0.267)
+
+    &__column-title
+        color: rgba(255, 255, 255, 0.267)
+
+    &__column-text
+        font-size: 12px
+
+    &__column-subtitle
+        font-size: 12px
+        color: rgba(255, 255, 255, 0.562)
+        font-weight: 700
+
+    &-gallery__image
+        width: 70px
+        height: 70px
+        object-fit: cover
+        filter: grayscale(100%)
+        border-radius: 4px
+
+.logo-placeholder
+    width: 150px
+    height: 50px
+    background-color: $primary-color
+
+.copy-panel
+    background-color: rgb(31, 31, 37)
+
+    &__socials
+        color: rgb(39, 40, 49)
+        text-align: center
+
+    &__socials-icon
+        font-size: 32px
+        padding: 0 5px 0 5px
+
+    &__credits
+        text-align: center
+
+.mobile
+    &__frame
+        position: relative
+        top: 160px
+        left: 50%
+        background: url('../assets/phone-frame.png') no-repeat
+        background-size: cover
+        width: 150px
+        height: 250px
+        z-index: 10
+    &__image
+        width: 140px
+        height: 220px
+        position: relative
+        top: 28px
+        left: 5px
+        object-fit: cover
+        filter: grayscale(100%)
+.tablet__frame
+    position: absolute
+    top: 100px
+    left: 65%
+    background: url('../assets/tablet-frame.png') no-repeat
+    background-size: contain
+    width: 100%
+    height: 300px
+    z-index: 1
+.tablet__image
+    width: 195px
+    height: 250px
+    position: relative
+    top: 28px
+    left: 14px
+    object-fit: cover
+    filter: grayscale(100%)
+// Small devices (landscape phones, 576px and up)
+// @media (min-width: 576px)  ...
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px)
+    .copy-panel__credits
+        font-size: 12px
+        justify-content: space-between
+        align-items: center
+    .hero
+        position: relative
+        top: 0
+        transform: translateY(30%)
+        padding: 0 0px 0 25px
+        flex: 0.6
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px)
+    .footer-gallery__image
+        width: 65px
+        height: 65px
+    .copy-panel
+        margin: 0 -40px 0 -40px
+        &__credits
+            font-size: 12px
+            justify-content: space-evenly
+            align-items: center
+    .slide
+        margin: 0 -40px 0 -40px
+    .main-content
+        padding: 0 40px 0 40px
+    .slider-background
+        height: 550px
+    .hero
+        position: relative
+        top: 0
+        transform: translateY(50%)
+        // padding: 0 0px 0 45px
+        margin-left: 50px
+        flex: 0.6
+        &__title
+            font-size: 66px
+            font-weight: 700
+            line-height: 58px
+        &__text
+            font-size: 21px
+            color: white
+            line-height: 24px
+
+        &__btn
+            background-color: white
+            color: black
+            border: none
+            border-radius: 2px
+            font-weight: 700
+            padding: 5px 54px 6px 54px
+    .mobile
+        &__frame
+            position: relative
+            top: 270px
+            left: 50%
+            background: url('../assets/phone-frame.png') no-repeat
+            background-size: cover
+            width: 180px
+            height: 280px
+            z-index: 10
+        &__image
+            width: 167px
+            height: 250px
+            position: relative
+            top: 34px
+            left: 7px
+            object-fit: cover
+            filter: grayscale(100%)
+    .tablet__frame
+        position: absolute
+        top: 100px
+        left: 65%
+        background: url('../assets/tablet-frame.png') no-repeat
+        background-size: cover
+        width: 400px
+        height: 450px
+        z-index: 1
+    .tablet__image
+        width: 338px
+        height: 400px
+        position: relative
+        top: 49px
+        left: 30px
+        object-fit: cover
+        filter: grayscale(100%)
+    .header__navigation
+        justify-content: flex-end
+        margin-right: 40px
+    .header__link
+        margin-right: 12px
+// Extra large devices (large desktops, 1200px and up)
+// @media (min-width: 1200px)  ...
