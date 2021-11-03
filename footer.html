@@ -1,6 +1,134 @@
-<div class="row">
-    <div class="col-md-3">
-      <img src="" alt="LOGO">
-      <div>Text</div>
+<footer class="container footer main-content">
+  <div class="row pt-5 pb-5">
+    <div class="col-md-6 col-lg-3">
+      <div class="logo-placeholder"></div>
+      <div class="footer__column-text mt-3">
+        Aliquam erat volutpat. Nullam feugiat, turpis at pulvinar vulputate,
+        erat libero tristique tellus, nec bibendum odio risus sit amet ante.
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-3 mt-5 mt-sm-0">
+      <h5 class="footer__column-title">Latest Tweets</h5>
+      <div></div>
+    </div>
+    <div class="col-md-6 col-lg-3 mt-5 mt-lg-0">
+      <h5 class="footer__column-title">Recent Posts</h5>
+      <div class="mt-3">
+        <h6 class="footer__column-subtitle">Publish What you learn</h6>
+        <div class="footer__column-text">
+          Vestibulum erat nulla, ullamcorper nec, rutrum non, nonummy ac, erat.
+          Curabitur sagittis hendrerit ante. Vivamus luctus egestas leo.
+        </div>
+      </div>
+      <div class="mt-2">
+        <h6 class="footer__column-subtitle">Redesigning With Personality</h6>
+        <div class="footer__column-text">
+          liquam in lorem sit amet leo accumsan lacinia. In enim a arcu
+          imperdiet malesuada. Etiam commodo dui eget wisi. Nam sed tellus id
+          magna elementum tincidunt.
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-3 mt-5 mt-lg-0">
+      <h5 class="footer__column-title">Photo Stream</h5>
+      <div class="row row-cols-4 gx-0 gy-3">
+        <div class="col">
+          <img
+            onclick="showImage(this)"
+            src="assets/IMG_0354-min.JPG"
+            class="footer-gallery__image"
+            alt=""
+          />
+        </div>
+        <div class="col">
+          <img
+            onclick="showImage(this)"
+            src="assets/IMG_0378-min.JPG"
+            class="footer-gallery__image"
+            alt=""
+          />
+        </div>
+        <div class="col">
+          <img
+            onclick="showImage(this)"
+            src="assets/IMG_0344-min.JPG"
+            class="footer-gallery__image"
+            alt=""
+          />
+        </div>
+        <div class="col">
+          <img
+            onclick="showImage(this)"
+            src="assets/IMG_0378-min.JPG"
+            class="footer-gallery__image"
+            alt=""
+          />
+        </div>
+        <div class="col">
+          <img
+            onclick="showImage(this)"
+            src="assets/IMG_0378-min.JPG"
+            class="footer-gallery__image"
+            alt=""
+          />
+        </div>
+        <div class="col">
+          <img
+            onclick="showImage(this)"
+            src="assets/IMG_0354-min.JPG"
+            class="footer-gallery__image"
+            alt=""
+          />
+        </div>
+        <div class="col">
+          <img
+            onclick="showImage(this)"
+            src="assets/IMG_0344-min.JPG"
+            class="footer-gallery__image"
+            alt=""
+          />
+        </div>
+        <div class="col">
+          <img
+            onclick="showImage(this)"
+            src="assets/IMG_0357-min.JPG"
+            class="footer-gallery__image"
+            alt=""
+          />
+        </div>
+      </div>
     </div>
   </div>
+  <div class="row copy-panel pt-3 pb-3">
+    <div class="col-md-6 copy-panel__credits d-md-flex">
+      <div>@2021 Martin Smidl</div>
+      <div>Legal Notice</div>
+      <div>Terms & Conditions</div>
+    </div>
+    <div class="col-md-6 copy-panel__socials mt-2 mt-sm-0">
+      <i class="fab fa-twitter-square copy-panel__socials-icon"></i>
+      <i class="fab fa-facebook-square copy-panel__socials-icon"></i>
+      <i class="fab fa-linkedin copy-panel__socials-icon"></i>
+      <i class="fab fa-pinterest-square copy-panel__socials-icon"></i>
+      <i class="fab fa-vimeo-square copy-panel__socials-icon"></i>
+    </div>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="modal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button
+            type="button"
+            class="btn-close"
+            aria-label="Close"
+            onclick="closeModal()"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <img id="content" class="img-fluid" />
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

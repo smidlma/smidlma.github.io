@@ -1,3 +1,13 @@
+.modal__open.modal {
+  display: block;
+  opacity: 1;
+}
+
+.modal__close {
+  display: none;
+  opacity: 0;
+}
+
 .overlay {
   background: url("../assets/IMG_0378-min.JPG") no-repeat bottom center fixed;
   -webkit-filter: grayscale(100%);
@@ -175,6 +185,84 @@
   filter: grayscale(100%);
 }
 
+.contact__baner {
+  height: 200px;
+  background-color: #f5c116;
+  margin: 0 -12px 0 -12px;
+}
+
+.map {
+  margin: 0 -12px 0 -12px;
+}
+.map__iframe {
+  width: 100%;
+  height: 400px;
+}
+
+.contact__title {
+  font-size: 22px;
+  font-weight: 700;
+  color: blac;
+}
+
+.contact-form__btn {
+  background-color: #f5c116;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  padding: 4px 20px 4px 20px;
+}
+
+.form-control:focus {
+  border-color: #f5c116;
+  box-shadow: 0 0 0 0.25rem rgba(245, 193, 22, 0.25);
+}
+
+.contact-socials {
+  font-size: 40px;
+}
+
+.blog-card {
+  padding-bottom: 54px;
+}
+.blog-card__title {
+  font-weight: 700;
+  font-size: 24px;
+}
+.blog-card__info {
+  font-size: 12px;
+  display: flex;
+  color: rgba(102, 100, 100, 0.767);
+}
+.blog-card__image {
+  filter: grayscale(100%);
+}
+
+.blog-menu__title {
+  font-weight: 700;
+}
+
+.blog-categories {
+  list-style-type: none;
+}
+.blog-categories > li {
+  border-bottom: 1px solid rgba(167, 167, 167, 0.767);
+  padding: 10px 0 10px 0;
+  margin-right: 20px;
+  margin-left: -20px;
+}
+.blog-categories > li:last-child {
+  border: none;
+}
+
+.blog-menu__recent-post-img {
+  filter: grayscale(100%);
+  object-fit: cover;
+  width: 60px;
+  height: 60px;
+  border-radius: 4px;
+}
+
 @media (min-width: 768px) {
   .copy-panel__credits {
     font-size: 12px;
@@ -191,6 +279,17 @@
   }
 }
 @media (min-width: 992px) {
+  .blog-menu__title {
+    font-size: 18px;
+  }
+
+  .blog-card__title {
+    font-size: 34px;
+  }
+  .blog-card__info {
+    font-size: 16px;
+  }
+
   .footer-gallery__image {
     width: 65px;
     height: 65px;
@@ -291,6 +390,14 @@
 
   .header__link {
     margin-right: 12px;
+  }
+
+  .map {
+    margin: 0 -40px 0 -40px;
+  }
+
+  .contact__baner {
+    margin: 0 -40px 0 -40px;
   }
 }
 
