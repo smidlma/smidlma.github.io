@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Post</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/b7fc43d8c8.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="overlay"></div>
+    <div id="header"></div>
+    <div class="container main-content">
+      <!-- start blog card -->
+      <div class="blog-card">
+        <div class="blog-card__title">Publish What You Learn</div>
+        <div class="blog-card__info gap-2 mt-3">
+          <span>
+            <i class="far fa-clock"></i>
+            July 9th, 2012
+          </span>
+          <span>
+            <i class="fas fa-user"></i>
+            Martin Šmídl
+          </span>
+          <span>
+            <i class="fas fa-tags"></i>
+            Web
+          </span>
+          <span>
+            <i class="fas fa-comments"></i>
+            35 comments
+          </span>
+        </div>
+        <div class="blog-card__image mt-4">
+          <img
+            src="assets/IMG_0357-min.JPG"
+            onclick="showImage(this)"
+            class="img-fluid"
+            alt=""
+          />
+        </div>
+        <div class="blog-card__description mt-3">
+          Integer rutrum, orci vestibulum ullamcorper ultricies, lacus quam
+          ultricies odio, vitae placerat pede sem sit amet enim. Fusce
+          consectetuer risus a nunc. Maecenas ipsum velit, consectetuer eu
+          lobortis ut, dictum at dui. Etiam posuere lacus quis dolor. Phasellus
+          rhoncus. Maecenas libero.
+        </div>
+        <div class="blog-card__description mt-3">
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vestibulum
+          fermentum tortor id mi. Nullam justo enim, consectetuer nec,
+          ullamcorper ac, vestibulum in, elit. Ut enim ad minima veniam, quis
+          nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut
+          aliquid ex ea commodi consequatur? Nullam sapien sem, ornare ac,
+          nonummy non, lobortis a enim. Curabitur ligula sapien, pulvinar a
+          vestibulum quis, facilisis vel sapien. Nullam faucibus mi quis velit.
+          Aenean id metus id velit ullamcorper pulvinar. In enim a arcu
+          imperdiet malesuada. Aliquam erat volutpat. Praesent vitae arcu tempor
+          neque lacinia pretium.
+        </div>
+        <a href="/blog.html">
+          <button class="contact-form__btn mt-4">Back to blog</button>
+        </a>
+      </div>
+      <!-- end blog card -->
+    </div>
+    <div id="footer"></div>
+  </body>
+  <script src="js/include.js"></script>
+  <script src="js/gallery.js"></script>
+</html>

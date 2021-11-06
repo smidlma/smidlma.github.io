@@ -62,15 +62,16 @@
             vestibulum in, elit. Aliquam in lorem sit amet leo accumsan lacinia.
             Nam sed tellus id magna elementum tincidunt.
           </div>
-          <form class="mt-4">
+          <form class="mt-4" id="needs-validation">
             <div class="mb-3">
               <label for="name" class="form-label">Name</label>
               <input
                 type="text"
                 class="form-control"
                 id="name"
-                aria-describedby="emailHelp"
+                required
               />
+              <div class="invalid-feedback">Please choose a username.</div>
             </div>
             <div class="mb-3">
               <label for="email" class="form-label">Email</label>
@@ -78,7 +79,7 @@
                 type="email"
                 class="form-control"
                 id="email"
-                aria-describedby="emailHelp"
+                required
               />
             </div>
             <div class="mb-3">
@@ -87,6 +88,7 @@
                 class="form-control"
                 name="message"
                 id="message"
+                required
               ></textarea>
             </div>
 
@@ -127,4 +129,6 @@
   </body>
   <script src="js/include.js"></script>
   <script src="js/gallery.js"></script>
+  <script>
+  </script>
 </html>
